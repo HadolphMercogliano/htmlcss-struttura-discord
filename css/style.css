@@ -1,0 +1,179 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --primary: red;
+}
+
+/* Generics */
+
+/* Utility */
+.container {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: aqua;
+}
+
+.header-container {
+    display: flex;
+    width: 900px;
+    height: 80px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-container>* {
+    background-color: goldenrod;
+    padding: 10px;
+    border: 2px dashed black;
+    min-width: 220px;
+}
+
+.header-container nav {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.header-container nav a {
+    padding: 10px;
+}
+
+.login {
+    text-align: right;
+}
+
+/* Main */
+
+.main-container>:nth-child(even) {
+    background-color: white;
+}
+
+/* main-header */
+.main-header {
+    display: flex;
+    background-color: blue;
+    height: 400px;
+    padding: 40px;
+}
+
+.main-header>section {
+    flex-direction: column;
+    background-color: palevioletred;
+    margin: 0 auto;
+    max-width: 60%;
+    flex-grow: 1;
+    border: 2px dashed black;
+}
+
+/* main-body */
+.main-body {
+    padding: 40px;
+    background-color: lightgrey;
+}
+
+.main-body>section {
+    width: 900px;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.main-body>section>article {
+    border: 2px dashed black;
+    flex-grow: 1;
+    min-width: 300px;
+    background-color: pink;
+}
+
+.main-body>section>aside {
+    border: 2px dashed black;
+    flex-grow: 2;
+    min-width: 300px;
+    background-color: rgb(0, 181, 226);
+}
+
+/* main-footer */
+.main-footer {
+    padding: 40px;
+    background-color: lightgrey;
+}
+
+.main-footer>section {
+    width: 900px;
+    display: flex;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.main-footer>section>article {
+    border: 2px dashed black;
+    flex-grow: 1;
+    background-color: green;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0px 0px;
+    background-color: rgb(70, 70, 70);
+}
+
+/* footer-header */
+.footer-header {
+    padding-bottom: 20px;
+}
+
+.footer-header>section {
+    width: 900px;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px dashed black;
+}
+
+.footer-header div:not(.large) {
+    flex-grow: 1;
+    background-color: green;
+    border: 2px dashed white;
+}
+
+.large {
+    flex-grow: 2;
+    background-color: palevioletred;
+}
+
+/* footer-footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.footer-container>section {
+    margin-top: auto;
+    display: flex;
+    padding: 10px;
+    background-color: aqua;
+    justify-content: space-between;
+
+}
+
+.footer-container>section>* {
+    background-color: lightgrey;
+    border: 2px dashed black;
+    padding: 2px;
+}
