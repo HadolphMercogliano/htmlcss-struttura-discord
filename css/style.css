@@ -25,21 +25,23 @@ a {
 /* Header */
 header {
     background-color: aqua;
+    padding: 0 40px;
 }
 
 .header-container {
     display: flex;
-    width: 900px;
+    width: 80%;
     height: 80px;
+    line-height: 40px;
     align-items: center;
     margin: 0 auto;
 }
 
 .header-container>* {
     background-color: goldenrod;
-    padding: 10px;
+    margin: 15px 0;
     border: 2px dashed black;
-    min-width: 220px;
+    flex-basis: 21%;
 }
 
 .header-container nav {
@@ -61,16 +63,15 @@ header {
     background-color: white;
 }
 
-/* main-header */
-.main-header {
+/* jumbotron */
+.jumbotron {
     display: flex;
     background-color: blue;
     height: 400px;
     padding: 40px;
 }
 
-.main-header>section {
-    flex-direction: column;
+.jumbotron>section {
     background-color: palevioletred;
     margin: 0 auto;
     max-width: 60%;
@@ -85,9 +86,9 @@ header {
 }
 
 .main-body>section {
-    width: 900px;
+    width: 80%;
     display: flex;
-    height: 400px;
+    min-height: 400px;
     margin: 0 auto;
 }
 
@@ -112,9 +113,9 @@ header {
 }
 
 .main-footer>section {
-    width: 900px;
+    width: 80%;
     display: flex;
-    height: 600px;
+    min-height: 600px;
     margin: 0 auto;
 }
 
@@ -126,40 +127,46 @@ header {
 
 /* Footer */
 footer {
-    padding: 15px 0px 0px;
+    padding: 15px 40px 0px;
     background-color: rgb(70, 70, 70);
 }
 
 /* footer-header */
-.footer-header {
+.footer-main {
     padding-bottom: 20px;
 }
 
-.footer-header>section {
-    width: 900px;
+.footer-main>section {
+    width: 80%;
     display: flex;
-    height: 400px;
+    min-height: 400px;
     margin: 0 auto;
     border: 2px dashed black;
 }
 
-.footer-header div:not(.large) {
-    flex-grow: 1;
+.footer-main .small-col {
+    display: flex;
+    flex-grow: 2;
     background-color: green;
+}
+
+.small-col>div {
+    width: 25%;
     border: 2px dashed white;
 }
 
 .large {
-    flex-grow: 2;
+    flex-grow: 1;
     background-color: palevioletred;
+    border-right: 2px dashed black;
 }
 
 /* footer-footer */
 .footer-container {
     display: flex;
     flex-direction: column;
-    width: 900px;
-    height: 80px;
+    width: 80%;
+    min-height: 80px;
     margin: 0 auto;
 }
 
@@ -176,4 +183,10 @@ footer {
     background-color: lightgrey;
     border: 2px dashed black;
     padding: 2px;
+}
+
+hr {
+    margin: 0 auto;
+    max-width: 60%;
+    color: grey;
 }
